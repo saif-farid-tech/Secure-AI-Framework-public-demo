@@ -1,0 +1,14 @@
+flask
+flask-cors
+# Core dependencies
+langgraph
+langchain-openai
+langchain-core
+networkx
+pyngrok
+requests
+
+# Optional dependency for PDF processing
+# Uncomment if you need PDF support via Docling
+docling
+numpy<2  # Required for docling compatibility
