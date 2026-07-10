@@ -1,0 +1,152 @@
+UAE Banking Sector: AI Governance, Excellence, and Human-Centered Development
+
+=== GOVERNANCE AND ACCOUNTABILITY ===
+
+Policy: UAE Banks Must Obtain Governance Committee Sign-Off Before AI Deployment
+Every UAE bank must obtain Governance Committee sign-off before deploying any AI system in production.
+
+Right: Customer Right to Hold Banks Accountable for AI Decisions
+Banking customers have the right to identify accountable executives when AI systems cause harm, preventing banks from hiding behind technology to avoid responsibility.
+
+Violation 011: Deploying AI Without Governance Committee Approval
+A bank deployed multiple AI systems for credit decisioning, fraud detection, and customer service after skipping the mandatory Governance Committee review.
+
+Fine: Deploying AI Without Governance Committee Approval Penalty
+Banks that bypass the Governance Committee face penalties of AED 5,000,000 to AED 25,000,000 and mandatory suspension of AI services until governance is established.
+
+Compliance: Internal AI Governance Committee Required at Every Bank
+Every UAE bank must establish an internal AI Governance Committee with technical experts, ethics specialists, legal counsel, and customer representatives before deploying any AI system.
+
+Authority: UAE Central Bank AI Governance Committee
+This committee reviews and approves all bank AI deployments and investigates governance failures.
+
+Policy: AI Banking Applications Must Pass Mandatory Risk Assessment Before Deployment
+All new AI banking applications must pass a comprehensive risk assessment covering technical safety, ethical implications, privacy impacts, and bias before being deployed.
+
+Right: Stakeholder Right to Participate in AI Governance Discussions
+Bank employees, customers, and community representatives have the right to participate in AI governance discussions that affect banking services and employment.
+
+Violation 012: Deploying AI Without Completing Risk Assessment
+A bank launched an AI-powered investment advisory service after skipping the mandatory risk assessment for conflicts of interest and suitability.
+
+Fine: Deploying AI Without Completing Risk Assessment Penalty
+Banks that deploy AI systems without completing the required risk assessment face fines of AED 3,000,000 to AED 18,000,000 and mandatory suspension until risk assessment is completed.
+
+Compliance: Annual Independent AI Governance Audits Required at Every Bank
+UAE banks must conduct annual independent audits of their AI governance practices, with results submitted to the Central Bank.
+
+Authority: UAE Central Bank AI Audit Division
+This division reviews bank AI governance structures and conducts surprise inspections of bank AI deployments.
+
+=== TECHNOLOGICAL EXCELLENCE ===
+
+Policy: Banks Must Use Up-to-Date AI Algorithms in Production
+Banks must use current, well-tested AI algorithms in production. Running outdated algorithms when superior alternatives exist is prohibited.
+
+Right: Customer Right to AI Services That Meet Quality Standards
+Banking customers have the right to AI services that meet international standards for accuracy and reliability, not outdated systems with high error rates.
+
+Violation 013: Running Outdated AI Algorithms in Production
+A bank continued operating an AI credit scoring system using five-year-old outdated algorithms despite availability of more accurate, less biased modern alternatives.
+
+Fine: Running Outdated AI Algorithms in Production Penalty
+Banks running outdated AI algorithms when superior alternatives exist face penalties of AED 2,000,000 to AED 10,000,000 and mandatory technology upgrades.
+
+Compliance: Quarterly AI Performance Benchmarking Against Industry Standards
+Banks must regularly benchmark their AI algorithm performance against international best practices and industry standards.
+
+Authority: UAE Banking Technology Standards Authority
+This authority sets minimum algorithm performance standards for banking AI systems and certifies systems that meet excellence criteria.
+
+Policy: Pre-Deployment Quality Testing Required for All AI Banking Systems
+All AI systems must undergo rigorous quality testing before deployment, including accuracy testing, stress testing, and validation against diverse customer scenarios.
+
+Right: Customer Right to AI Algorithms That Match International Quality Standards
+Customers have the right to benefit from AI innovations that meet international quality standards, not from substandard systems banks retain to save costs.
+
+Violation 014: Deploying AI With High Error Rates Into Production
+A bank's AI fraud detection system showed high error rates (15%) in testing but was deployed anyway, resulting in numerous false-positive account freezes affecting innocent customers.
+
+Fine: Deploying AI With High Error Rates Into Production Penalty
+Banks that deploy AI systems with high error rates face fines of AED 4,000,000 to AED 20,000,000 and mandatory system replacement.
+
+Compliance: Continuous AI System Improvement Programs Required
+Banks must maintain ongoing programs to improve AI system performance, accuracy, and fairness, replacing outdated algorithms with better alternatives as they become available.
+
+=== HUMAN COMMITMENT ===
+
+Policy: Banking AI Must Be Designed Around Customer Well-Being Not Just Profit
+AI development in UAE banking must prioritize customer well-being. Designing AI to maximize bank profit at the expense of customer well-being is prohibited.
+
+Right: Customer Right to AI Designed Around Customer Well-Being
+Customers have the right to banking AI systems designed with their well-being as the primary objective, not solely profit maximization or operational efficiency.
+
+Violation 016: Designing AI to Push High-Fee Products on Rejected Applicants
+A bank designed its AI chatbot to push high-fee loans on rejected applicants and aggressively cross-sell its highest-fee products even when lower-cost alternatives better served customer needs.
+
+Fine: Designing AI to Push High-Fee Products on Rejected Applicants Penalty
+Banks that design AI to push high-fee products on rejected applicants face fines of AED 5,000,000 to AED 30,000,000 and mandatory algorithm redesign with customer-centric objectives.
+
+Compliance: Customer-Centric Performance Metrics Required for Banking AI
+Banks must establish customer-centric performance metrics for AI systems that measure positive impact on customer financial health, not just bank revenue.
+
+Authority: UAE Financial Consumer Protection Agency
+This agency ensures banking AI serves customer interests and investigates complaints about AI designed to push high-fee products on customers.
+
+Policy: Mandatory Retraining Program Required When AI Replaces Bank Staff
+When banks deploy AI that replaces staff roles, they must provide a retraining program for affected employees.
+
+Right: Employee Right to Retraining Program When AI Replaces Their Role
+Bank employees have the right to receive a retraining program when AI is deployed to replace their role.
+
+Violation 015: Firing Staff Without Retraining Program When Deploying AI
+A bank fired 200 customer service staff when implementing AI chatbots without providing any retraining program, transition assistance, or alternative position opportunities.
+
+Fine: Firing Staff Without Retraining Program When Deploying AI Penalty
+Banks that fire staff without providing a retraining program when deploying AI face penalties of AED 10,000,000 to AED 50,000,000 plus employee compensation.
+
+Compliance: Mandatory Stakeholder Consultation Before AI Deployment Affects Jobs
+Banks must consult with employees and community representatives when developing AI systems that significantly impact their employment.
+
+Authority: UAE Human Rights Commission - Digital Rights Division
+This commission investigates complaints about banking AI that harms human dignity, well-being, or employment.
+
+=== RELATIONSHIPS AND CONNECTIONS ===
+
+Internal AI Governance Committee Required at Every Bank controls Deploying AI Without Governance Committee Approval
+Deploying AI Without Governance Committee Approval violates Customer Right to Hold Banks Accountable for AI Decisions
+UAE Central Bank AI Governance Committee controls Deploying AI Without Governance Committee Approval
+Annual Independent AI Governance Audits Required at Every Bank controls Deploying AI Without Governance Committee Approval
+
+Annual Independent AI Governance Audits Required at Every Bank controls Deploying AI Without Completing Risk Assessment
+Deploying AI Without Completing Risk Assessment violates Customer Right to Hold Banks Accountable for AI Decisions
+UAE Central Bank AI Audit Division controls Deploying AI Without Completing Risk Assessment
+
+Continuous AI System Improvement Programs Required controls Running Outdated AI Algorithms in Production
+Quarterly AI Performance Benchmarking Against Industry Standards controls Running Outdated AI Algorithms in Production
+Running Outdated AI Algorithms in Production violates Customer Right to AI Services That Meet Quality Standards
+UAE Banking Technology Standards Authority controls Running Outdated AI Algorithms in Production
+
+Pre-Deployment Quality Testing Required for All AI Banking Systems controls Deploying AI With High Error Rates Into Production
+Deploying AI With High Error Rates Into Production violates Customer Right to AI Algorithms That Match International Quality Standards
+UAE Banking Technology Standards Authority controls Deploying AI With High Error Rates Into Production
+
+Mandatory Retraining Program Required When AI Replaces Bank Staff controls Firing Staff Without Retraining Program When Deploying AI
+Firing Staff Without Retraining Program When Deploying AI violates Employee Right to Retraining Program When AI Replaces Their Role
+UAE Human Rights Commission - Digital Rights Division controls Firing Staff Without Retraining Program When Deploying AI
+Mandatory Stakeholder Consultation Before AI Deployment Affects Jobs controls Firing Staff Without Retraining Program When Deploying AI
+
+Customer-Centric Performance Metrics Required for Banking AI controls Designing AI to Push High-Fee Products on Rejected Applicants
+Designing AI to Push High-Fee Products on Rejected Applicants violates Customer Right to AI Designed Around Customer Well-Being
+UAE Financial Consumer Protection Agency controls Designing AI to Push High-Fee Products on Rejected Applicants
+
+Policy: Governance Committee Must Review All AI Deployments That Process Customer Transaction Data Without Consent
+Compliance: Annual Governance Audits Must Verify Consent Compliance for All AI Training Data
+Violation 011B: Deploying AI Without Governance Committee Approval to Process Customer Data Without Consent
+Fine: Deploying AI Without Governance Committee Approval to Process Customer Data Without Consent Penalty
+Right: Customer Right to Hold Banks Accountable for AI Trained on Their Transaction Data Without Consent
+Authority: UAE Central Bank AI Governance Committee
+
+Deploying AI Without Governance Committee Approval to Process Customer Data Without Consent violates Customer Right to Hold Banks Accountable for AI Trained on Their Transaction Data Without Consent
+UAE Central Bank AI Governance Committee controls Deploying AI Without Governance Committee Approval to Process Customer Data Without Consent
+Annual Governance Audits Must Verify Consent Compliance for All AI Training Data controls Deploying AI Without Governance Committee Approval to Process Customer Data Without Consent
