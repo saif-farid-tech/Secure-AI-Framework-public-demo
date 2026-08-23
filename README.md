@@ -1,87 +1,91 @@
-# Welcome to your Lovable project
+# SAIF — Secure AI Framework
 
-## Project info
+A full-stack demo that visualizes an AI safety pipeline in real time. User prompts flow through multi-agent input filters, an LLM, and output filters — all grounded in the **UAE Charter for the Development and Use of Artificial Intelligence (July 2024)**.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Four LangGraph agents (two input, two output) assess and transform content against 12 charter principles covering safety, privacy, fairness, transparency, governance, and legal compliance. The entire pipeline streams results to the frontend via Server-Sent Events.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **Real-time pipeline visualization** — watch prompts flow through input filters → LLM → output filters with animated connectors
+- **Multi-agent safety filtering** — four agents powered by GPT-4o-mini, each covering a subset of UAE Charter principles
+- **GraphRAG knowledge base** — agents query a NetworkX knowledge graph (not vector RAG) built from UAE banking policy documents
+- **Harm classification** — each agent classifies content as safe, mild, moderate, or severe
+- **SSE streaming** — pipeline stages update the UI incrementally as they complete
 
-**Use Lovable**
+## Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+**Frontend:** React, TypeScript, Vite, Tailwind CSS, shadcn/ui, React Router
 
-Changes made via Lovable will be committed automatically to this repo.
+**Backend:** Python, Flask, LangGraph, LangChain, OpenAI API (GPT-4o-mini), NetworkX
 
-**Use your preferred IDE**
+## Project Structure
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+```
+backend/
+  app.py                 # Flask server with /process-pipeline SSE endpoint
+  Prompt_filter.py       # Input filter agents (LangGraph)
+  Output_filter.py       # Output filter agents (LangGraph)
+  Agent_1/               # Knowledge base docs for Agent 1 (principles 1–6)
+  Agent_2/               # Knowledge base docs for Agent 2 (principles 7–12)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+src/
+  pages/
+    Index.tsx            # Main pipeline visualization page
+  components/pipeline/   # Pipeline UI components (AgentCard, FilterStage, etc.)
+  hooks/
+    usePipeline.ts       # Pipeline state management & SSE consumption
+  types/
+    pipeline.ts          # TypeScript types for pipeline state
 ```
 
-**Edit a file directly in GitHub**
+## Getting Started
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Prerequisites
 
-**Use GitHub Codespaces**
+- Node.js & npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Python 3 & pip
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## Environment variables (API keys)
-
-The backend reads its API keys from environment variables. Keys are **not**
-committed to this repository.
+### Environment Variables
 
 ```sh
-# Copy the template and fill in your own keys
 cp .env.example .env
 ```
 
-`.env` is listed in `.gitignore` and must never be committed. When deploying
-(e.g. Lovable, a cloud host, or CI), set `OPENAI_API_KEY` and `NGROK_API_KEY`
-as secrets in the platform's environment settings instead of using a file.
+Fill in your keys:
 
-## What technologies are used for this project?
+| Variable | Purpose |
+|---|---|
+| `OPENAI_API_KEY` | OpenAI API key for GPT-4o-mini and embeddings |
+| `NGROK_API_KEY` | ngrok auth token for tunneling the Flask server |
 
-This project is built with:
+`.env` is listed in `.gitignore` and must never be committed. When deploying, set these as secrets in your platform's environment settings.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Frontend
 
-## How can I deploy this project?
+```sh
+npm install
+npm run dev
+```
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+The dev server starts on port 8080.
 
-## Can I connect a custom domain to my Lovable project?
+### Backend
 
-Yes, you can!
+```sh
+pip install -r requirements.txt
+python backend/app.py
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+The Flask server starts on port 5000.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## How It Works
+
+1. **User enters a prompt** and clicks "Run Pipeline"
+2. **Input filter agents** assess the prompt against UAE Charter principles and sanitize it if needed
+   - Agent 1: Human-Machine Ties, Safety, Algorithmic Bias, Data Privacy, Transparency, Human Oversight
+   - Agent 2: Governance, Accountability, Tech Excellence, Human Commitment, Peaceful Coexistence, AI Awareness, Legal Compliance
+3. **LLM processes** the filtered prompt using GPT-4o-mini
+4. **Output filter agents** assess and sanitize the LLM's response using the same principle sets
+5. **Final output** is displayed with full traceability of each agent's assessment
+
+Each agent uses a two-step LangGraph workflow: `assess_harm` → `transform`, querying a knowledge graph built from UAE banking policy documents for relevant context.
